@@ -1,0 +1,212 @@
+{
+  "dataset_version": "1.0.0",
+  "package_id": "PKG-002",
+  "document_id": "PKG-002_INV",
+  "document_type": "commercial_invoice",
+  "language": "vi",
+  "template_id": "modern_grid",
+  "file_name": "PKG-002_commercial_invoice.pdf",
+  "page_dimensions": {
+    "unit": "point",
+    "width": 595.2755905511812,
+    "height": 841.8897637795277,
+    "page_count": 1
+  },
+  "scenario": {
+    "scenario_id": "CLEAN_BASELINE_VI",
+    "category": "clean",
+    "description": "Bộ chứng từ xuất khẩu mẫu sạch: Tiếng Việt, các chứng từ hoàn toàn khớp."
+  },
+  "fields": [
+    {
+      "canonical_name": "document_number",
+      "raw_value": "HD-2026-002",
+      "normalized_value": "HD-2026-002",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        83.39,
+        510.03,
+        93.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "issue_date",
+      "raw_value": "2026-10-18",
+      "normalized_value": "2026-10-18",
+      "data_type": "date",
+      "page": 1,
+      "bbox": [
+        450,
+        98.39,
+        501.15,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "order_number",
+      "raw_value": "DH-2026-TYO-02",
+      "normalized_value": "DH-2026-TYO-02",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        113.39,
+        528.36,
+        123.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_name",
+      "raw_value": "CÔNG TY CP NÔNG SẢN ĐÀ NẴNG",
+      "normalized_value": "CÔNG TY CP NÔNG SẢN ĐÀ NẴNG",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        98.39,
+        213.34,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_address",
+      "raw_value": "Số 45 Đường Bạch Đằng, Quận Hải Châu, TP. Đà Nẵng, Việt Nam",
+      "normalized_value": "Số 45 Đường Bạch Đằng, Quận Hải Châu, TP. Đà Nẵng, Việt Nam",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        109.89,
+        345,
+        129.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_name",
+      "raw_value": "TOKYO TRADING CO., LTD.",
+      "normalized_value": "TOKYO TRADING CO., LTD.",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        158.39,
+        177.22,
+        168.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_address",
+      "raw_value": "3-2-1 Marunouchi, Chiyoda-ku, Tokyo 100-0005, Japan",
+      "normalized_value": "3-2-1 Marunouchi, Chiyoda-ku, Tokyo 100-0005, Japan",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        169.89,
+        345,
+        189.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_loading",
+      "raw_value": "Cảng Tiên Sa, Đà Nẵng",
+      "normalized_value": "Cảng Tiên Sa, Đà Nẵng",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        125,
+        205.09,
+        209.94,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_discharge",
+      "raw_value": "Cảng Yokohama, Nhật Bản",
+      "normalized_value": "Cảng Yokohama, Nhật Bản",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        205.09,
+        462.39,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "incoterm",
+      "raw_value": "CIF",
+      "normalized_value": "CIF",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        220.09,
+        377.89,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "currency",
+      "raw_value": "USD",
+      "normalized_value": "USD",
+      "data_type": "currency",
+      "page": 1,
+      "bbox": [
+        510,
+        220.09,
+        526.89,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_amount",
+      "raw_value": "USD 84.000,00",
+      "normalized_value": 84000.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        480,
+        300.24,
+        541.54,
+        309.69
+      ],
+      "status": "present"
+    }
+  ],
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "PEPPER-BLACK-500",
+      "description": "Tiêu đen xuất khẩu loại 500g/l",
+      "quantity": 20.0,
+      "unit": "TẤN",
+      "unit_price": 4200.0,
+      "line_total": 84000.0,
+      "gross_weight": null,
+      "net_weight": null,
+      "package_count": 400,
+      "package_type": "BAO ĐAY",
+      "page": 1,
+      "bbox": [
+        40,
+        260.89,
+        555,
+        274.89
+      ]
+    }
+  ]
+}

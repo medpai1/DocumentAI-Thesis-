@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://documentai-thesis.org/schemas/manifest.schema.json",
+  "title": "PilotDatasetManifest",
+  "description": "Manifest indexing all packages, documents, scenarios, and dataset partitions.",
+  "type": "object",
+  "required": [
+    "dataset_name",
+    "dataset_version",
+    "generation_seed",
+    "total_packages",
+    "total_documents",
+    "packages"
+  ],
+  "properties": {
+    "dataset_name": { "type": "string" },
+    "dataset_version": { "type": "string" },
+    "generation_seed": { "type": "integer" },
+    "total_packages": { "type": "integer", "minimum": 1 },
+    "total_documents": { "type": "integer", "minimum": 1 },
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "package_id",
+          "language",
+          "split",
+          "scenario_id",
+          "scenario_category",
+          "description",
+          "commercial_invoice",
+          "packing_list"
+        ],
+        "properties": {
+          "package_id": { "type": "string", "pattern": "^PKG-[0-9]{3}$" },
+          "language": { "type": "string", "enum": ["en", "vi"] },
+          "split": { "type": "string", "enum": ["train", "validation", "test"] },
+          "scenario_id": { "type": "string" },
+          "scenario_category": { "type": "string", "enum": ["clean", "discrepancy", "benign_variation"] },
+          "description": { "type": "string" },
+          "commercial_invoice": {
+            "type": "object",
+            "required": ["document_id", "file_name", "annotation_file", "template_id"],
+            "properties": {
+              "document_id": { "type": "string" },
+              "file_name": { "type": "string" },
+              "annotation_file": { "type": "string" },
+              "template_id": { "type": "string" }
+            }
+          },
+          "packing_list": {
+            "type": "object",
+            "required": ["document_id", "file_name", "annotation_file", "template_id"],
+            "properties": {
+              "document_id": { "type": "string" },
+              "file_name": { "type": "string" },
+              "annotation_file": { "type": "string" },
+              "template_id": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

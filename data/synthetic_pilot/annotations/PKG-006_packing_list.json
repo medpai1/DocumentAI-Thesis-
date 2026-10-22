@@ -1,0 +1,212 @@
+{
+  "dataset_version": "1.0.0",
+  "package_id": "PKG-006",
+  "document_id": "PKG-006_PL",
+  "document_type": "packing_list",
+  "language": "vi",
+  "template_id": "modern_grid",
+  "file_name": "PKG-006_packing_list.pdf",
+  "page_dimensions": {
+    "unit": "point",
+    "width": 595.2755905511812,
+    "height": 841.8897637795277,
+    "page_count": 1
+  },
+  "scenario": {
+    "scenario_id": "NET_WEIGHT_MISMATCH_VI",
+    "category": "discrepancy",
+    "description": "Sai lệch trọng lượng tịnh: Hóa đơn ghi 15.000 KG nhưng Phiếu đóng gói ghi 14.200 KG."
+  },
+  "fields": [
+    {
+      "canonical_name": "document_number",
+      "raw_value": "PK-2026-006",
+      "normalized_value": "PK-2026-006",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        83.39,
+        508.93,
+        93.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "issue_date",
+      "raw_value": "2026-10-21",
+      "normalized_value": "2026-10-21",
+      "data_type": "date",
+      "page": 1,
+      "bbox": [
+        450,
+        98.39,
+        501.15,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "order_number",
+      "raw_value": "DH-2026-BJS-006",
+      "normalized_value": "DH-2026-BJS-006",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        113.39,
+        531.7,
+        123.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_name",
+      "raw_value": "CÔNG TY TNHH XNK HẠT ĐIỀU BÌNH PHƯỚC",
+      "normalized_value": "CÔNG TY TNHH XNK HẠT ĐIỀU BÌNH PHƯỚC",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        98.39,
+        262.94,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_address",
+      "raw_value": "Khu công nghiệp Đồng Xoài 1, Bình Phước, Việt Nam",
+      "normalized_value": "Khu công nghiệp Đồng Xoài 1, Bình Phước, Việt Nam",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        109.89,
+        345,
+        129.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_name",
+      "raw_value": "BEIJING AGRI-IMPORT CORP",
+      "normalized_value": "BEIJING AGRI-IMPORT CORP",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        158.39,
+        186.67,
+        168.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_address",
+      "raw_value": "No. 18 Jianguomenwai Avenue, Chaoyang District, Beijing, China",
+      "normalized_value": "No. 18 Jianguomenwai Avenue, Chaoyang District, Beijing, China",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        169.89,
+        345,
+        189.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_loading",
+      "raw_value": "Cảng Cát Lái, TP. Hồ Chí Minh",
+      "normalized_value": "Cảng Cát Lái, TP. Hồ Chí Minh",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        125,
+        205.09,
+        235.27,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_discharge",
+      "raw_value": "Cảng Thiên Tân, Trung Quốc",
+      "normalized_value": "Cảng Thiên Tân, Trung Quốc",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        205.09,
+        469.05,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "incoterm",
+      "raw_value": "CIF",
+      "normalized_value": "CIF",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        220.09,
+        377.89,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_net_weight",
+      "raw_value": "14.200,00 KG",
+      "normalized_value": 14200.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        380,
+        300.24,
+        436.04,
+        309.69
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_gross_weight",
+      "raw_value": "15.450,00 KG",
+      "normalized_value": 15450.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        380,
+        314.24,
+        436.04,
+        323.69
+      ],
+      "status": "present"
+    }
+  ],
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "CASHEW-WS",
+      "description": "Nhân điều vỡ đôi xuất khẩu loại WS",
+      "quantity": 15.0,
+      "unit": "TẤN",
+      "unit_price": null,
+      "line_total": null,
+      "gross_weight": 15450.0,
+      "net_weight": 15000.0,
+      "package_count": 600,
+      "package_type": "THÙNG CARTON",
+      "page": 1,
+      "bbox": [
+        40,
+        260.89,
+        555,
+        274.89
+      ]
+    }
+  ]
+}

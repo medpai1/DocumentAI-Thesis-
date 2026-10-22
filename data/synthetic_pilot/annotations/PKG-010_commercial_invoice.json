@@ -1,0 +1,232 @@
+{
+  "dataset_version": "1.0.0",
+  "package_id": "PKG-010",
+  "document_id": "PKG-010_INV",
+  "document_type": "commercial_invoice",
+  "language": "vi",
+  "template_id": "modern_grid",
+  "file_name": "PKG-010_commercial_invoice.pdf",
+  "page_dimensions": {
+    "unit": "point",
+    "width": 595.2755905511812,
+    "height": 841.8897637795277,
+    "page_count": 1
+  },
+  "scenario": {
+    "scenario_id": "ARITHMETIC_TOTAL_SUM_VI",
+    "category": "discrepancy",
+    "description": "Sai số học tổng hóa đơn: Hai dòng hàng 25.000 USD + 25.000 USD nhưng tổng cộng in 60.000 USD."
+  },
+  "fields": [
+    {
+      "canonical_name": "document_number",
+      "raw_value": "HD-2026-010",
+      "normalized_value": "HD-2026-010",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        83.39,
+        510.03,
+        93.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "issue_date",
+      "raw_value": "2026-10-22",
+      "normalized_value": "2026-10-22",
+      "data_type": "date",
+      "page": 1,
+      "bbox": [
+        450,
+        98.39,
+        501.15,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "order_number",
+      "raw_value": "DH-2026-KOR-010",
+      "normalized_value": "DH-2026-KOR-010",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        113.39,
+        535.03,
+        123.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_name",
+      "raw_value": "CÔNG TY CP XUẤT NHẬP KHẨU BẾN TRE",
+      "normalized_value": "CÔNG TY CP XUẤT NHẬP KHẨU BẾN TRE",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        98.39,
+        246.67,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_address",
+      "raw_value": "75 Đại lộ Đồng Khởi, TP. Bến Tre, Tỉnh Bến Tre, Việt Nam",
+      "normalized_value": "75 Đại lộ Đồng Khởi, TP. Bến Tre, Tỉnh Bến Tre, Việt Nam",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        109.89,
+        345,
+        129.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_name",
+      "raw_value": "SEOUL FOOD DISTRIBUTION CO",
+      "normalized_value": "SEOUL FOOD DISTRIBUTION CO",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        158.39,
+        202.78,
+        168.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_address",
+      "raw_value": "Teheran-ro 152, Gangnam-gu, Seoul 06236, South Korea",
+      "normalized_value": "Teheran-ro 152, Gangnam-gu, Seoul 06236, South Korea",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        169.89,
+        345,
+        189.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_loading",
+      "raw_value": "Cảng Cát Lái, TP. Hồ Chí Minh",
+      "normalized_value": "Cảng Cát Lái, TP. Hồ Chí Minh",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        125,
+        205.09,
+        235.27,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_discharge",
+      "raw_value": "Cảng Busan, Hàn Quốc",
+      "normalized_value": "Cảng Busan, Hàn Quốc",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        205.09,
+        449.5,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "incoterm",
+      "raw_value": "CIF",
+      "normalized_value": "CIF",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        220.09,
+        377.89,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "currency",
+      "raw_value": "USD",
+      "normalized_value": "USD",
+      "data_type": "currency",
+      "page": 1,
+      "bbox": [
+        510,
+        220.09,
+        526.89,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_amount",
+      "raw_value": "USD 60.000,00",
+      "normalized_value": 60000.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        480,
+        318.24,
+        541.54,
+        327.69
+      ],
+      "status": "present"
+    }
+  ],
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "COCONUT-DESICCATED-F",
+      "description": "Cơm dừa sấy khô hạt mịn loại Fine Grade",
+      "quantity": 10.0,
+      "unit": "TẤN",
+      "unit_price": 2500.0,
+      "line_total": 25000.0,
+      "gross_weight": null,
+      "net_weight": null,
+      "package_count": 400,
+      "package_type": "BAO GIẤY",
+      "page": 1,
+      "bbox": [
+        40,
+        260.89,
+        555,
+        274.89
+      ]
+    },
+    {
+      "line_number": 2,
+      "sku": "COCONUT-DESICCATED-M",
+      "description": "Cơm dừa sấy khô hạt trung Medium Grade",
+      "quantity": 10.0,
+      "unit": "TẤN",
+      "unit_price": 2500.0,
+      "line_total": 25000.0,
+      "gross_weight": null,
+      "net_weight": null,
+      "package_count": 400,
+      "package_type": "BAO GIẤY",
+      "page": 1,
+      "bbox": [
+        40,
+        278.89,
+        555,
+        292.89
+      ]
+    }
+  ]
+}

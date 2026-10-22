@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://documentai-thesis.org/schemas/expected_comparisons.schema.json",
+  "title": "ExpectedCrossDocumentComparisons",
+  "description": "Ground truth expected outcomes for rule-based cross-document discrepancy detection.",
+  "type": "object",
+  "required": [
+    "dataset_version",
+    "total_comparisons",
+    "comparisons"
+  ],
+  "properties": {
+    "dataset_version": { "type": "string" },
+    "total_comparisons": { "type": "integer", "minimum": 1 },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "comparison_id",
+          "package_id",
+          "rule_id",
+          "rule_name",
+          "source_document_id",
+          "source_field",
+          "target_document_id",
+          "target_field",
+          "expected_outcome",
+          "discrepancy_category",
+          "explanation"
+        ],
+        "properties": {
+          "comparison_id": { "type": "string" },
+          "package_id": { "type": "string", "pattern": "^PKG-[0-9]{3}$" },
+          "rule_id": { "type": "string" },
+          "rule_name": { "type": "string" },
+          "source_document_id": { "type": "string" },
+          "source_field": { "type": "string" },
+          "target_document_id": { "type": "string" },
+          "target_field": { "type": "string" },
+          "expected_outcome": { "type": "string", "enum": ["match", "discrepancy", "not_comparable"] },
+          "discrepancy_category": { "type": "string" },
+          "explanation": { "type": "string" },
+          "expected_source_value": { "type": ["string", "number", "null"] },
+          "expected_target_value": { "type": ["string", "number", "null"] }
+        }
+      }
+    }
+  }
+}

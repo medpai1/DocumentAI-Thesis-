@@ -1,0 +1,249 @@
+{
+  "dataset_name": "Synthetic Bilingual Export Document Pilot Dataset",
+  "dataset_version": "1.0.0",
+  "generation_seed": 42,
+  "total_packages": 12,
+  "total_documents": 24,
+  "packages": [
+    {
+      "package_id": "PKG-001",
+      "language": "en",
+      "split": "train",
+      "scenario_id": "CLEAN_BASELINE_EN",
+      "scenario_category": "clean",
+      "description": "Clean baseline export shipment: English, perfect cross-document agreement.",
+      "commercial_invoice": {
+        "document_id": "PKG-001_INV",
+        "file_name": "PKG-001_commercial_invoice.pdf",
+        "annotation_file": "PKG-001_commercial_invoice.json",
+        "template_id": "classic_standard"
+      },
+      "packing_list": {
+        "document_id": "PKG-001_PL",
+        "file_name": "PKG-001_packing_list.pdf",
+        "annotation_file": "PKG-001_packing_list.json",
+        "template_id": "classic_standard"
+      }
+    },
+    {
+      "package_id": "PKG-002",
+      "language": "vi",
+      "split": "train",
+      "scenario_id": "CLEAN_BASELINE_VI",
+      "scenario_category": "clean",
+      "description": "Bộ chứng từ xuất khẩu mẫu sạch: Tiếng Việt, các chứng từ hoàn toàn khớp.",
+      "commercial_invoice": {
+        "document_id": "PKG-002_INV",
+        "file_name": "PKG-002_commercial_invoice.pdf",
+        "annotation_file": "PKG-002_commercial_invoice.json",
+        "template_id": "modern_grid"
+      },
+      "packing_list": {
+        "document_id": "PKG-002_PL",
+        "file_name": "PKG-002_packing_list.pdf",
+        "annotation_file": "PKG-002_packing_list.json",
+        "template_id": "modern_grid"
+      }
+    },
+    {
+      "package_id": "PKG-003",
+      "language": "en",
+      "split": "train",
+      "scenario_id": "QTY_MISMATCH_EN",
+      "scenario_category": "discrepancy",
+      "description": "Quantity mismatch: Invoice specifies 500 Bags while Packing List specifies 480 Bags.",
+      "commercial_invoice": {
+        "document_id": "PKG-003_INV",
+        "file_name": "PKG-003_commercial_invoice.pdf",
+        "annotation_file": "PKG-003_commercial_invoice.json",
+        "template_id": "modern_grid"
+      },
+      "packing_list": {
+        "document_id": "PKG-003_PL",
+        "file_name": "PKG-003_packing_list.pdf",
+        "annotation_file": "PKG-003_packing_list.json",
+        "template_id": "modern_grid"
+      }
+    },
+    {
+      "package_id": "PKG-004",
+      "language": "vi",
+      "split": "train",
+      "scenario_id": "QTY_MISMATCH_VI",
+      "scenario_category": "discrepancy",
+      "description": "Sai lệch số lượng: Hóa đơn ghi 1.500 Thùng nhưng Phiếu đóng gói ghi 1.450 Thùng.",
+      "commercial_invoice": {
+        "document_id": "PKG-004_INV",
+        "file_name": "PKG-004_commercial_invoice.pdf",
+        "annotation_file": "PKG-004_commercial_invoice.json",
+        "template_id": "classic_standard"
+      },
+      "packing_list": {
+        "document_id": "PKG-004_PL",
+        "file_name": "PKG-004_packing_list.pdf",
+        "annotation_file": "PKG-004_packing_list.json",
+        "template_id": "classic_standard"
+      }
+    },
+    {
+      "package_id": "PKG-005",
+      "language": "en",
+      "split": "train",
+      "scenario_id": "GROSS_WEIGHT_MISMATCH_EN",
+      "scenario_category": "discrepancy",
+      "description": "Gross weight mismatch: Invoice shows 25,500 KG while Packing List shows 26,800 KG.",
+      "commercial_invoice": {
+        "document_id": "PKG-005_INV",
+        "file_name": "PKG-005_commercial_invoice.pdf",
+        "annotation_file": "PKG-005_commercial_invoice.json",
+        "template_id": "classic_standard"
+      },
+      "packing_list": {
+        "document_id": "PKG-005_PL",
+        "file_name": "PKG-005_packing_list.pdf",
+        "annotation_file": "PKG-005_packing_list.json",
+        "template_id": "classic_standard"
+      }
+    },
+    {
+      "package_id": "PKG-006",
+      "language": "vi",
+      "split": "train",
+      "scenario_id": "NET_WEIGHT_MISMATCH_VI",
+      "scenario_category": "discrepancy",
+      "description": "Sai lệch trọng lượng tịnh: Hóa đơn ghi 15.000 KG nhưng Phiếu đóng gói ghi 14.200 KG.",
+      "commercial_invoice": {
+        "document_id": "PKG-006_INV",
+        "file_name": "PKG-006_commercial_invoice.pdf",
+        "annotation_file": "PKG-006_commercial_invoice.json",
+        "template_id": "modern_grid"
+      },
+      "packing_list": {
+        "document_id": "PKG-006_PL",
+        "file_name": "PKG-006_packing_list.pdf",
+        "annotation_file": "PKG-006_packing_list.json",
+        "template_id": "modern_grid"
+      }
+    },
+    {
+      "package_id": "PKG-007",
+      "language": "en",
+      "split": "train",
+      "scenario_id": "PARTY_BUYER_MISMATCH_EN",
+      "scenario_category": "discrepancy",
+      "description": "Buyer/Consignee mismatch: Invoice lists Atlantic Foods Ltd while Packing List lists Pacific Maritime Ltd.",
+      "commercial_invoice": {
+        "document_id": "PKG-007_INV",
+        "file_name": "PKG-007_commercial_invoice.pdf",
+        "annotation_file": "PKG-007_commercial_invoice.json",
+        "template_id": "modern_grid"
+      },
+      "packing_list": {
+        "document_id": "PKG-007_PL",
+        "file_name": "PKG-007_packing_list.pdf",
+        "annotation_file": "PKG-007_packing_list.json",
+        "template_id": "modern_grid"
+      }
+    },
+    {
+      "package_id": "PKG-008",
+      "language": "vi",
+      "split": "validation",
+      "scenario_id": "PARTY_SELLER_MISMATCH_VI",
+      "scenario_category": "discrepancy",
+      "description": "Sai lệch bên bán/người gửi: Hóa đơn ghi Cty Nông sản Sài Gòn nhưng Phiếu đóng gói ghi Cty Hoàng Gia.",
+      "commercial_invoice": {
+        "document_id": "PKG-008_INV",
+        "file_name": "PKG-008_commercial_invoice.pdf",
+        "annotation_file": "PKG-008_commercial_invoice.json",
+        "template_id": "classic_standard"
+      },
+      "packing_list": {
+        "document_id": "PKG-008_PL",
+        "file_name": "PKG-008_packing_list.pdf",
+        "annotation_file": "PKG-008_packing_list.json",
+        "template_id": "classic_standard"
+      }
+    },
+    {
+      "package_id": "PKG-009",
+      "language": "en",
+      "split": "validation",
+      "scenario_id": "ARITHMETIC_LINE_TOTAL_EN",
+      "scenario_category": "discrepancy",
+      "description": "Arithmetic error: Line item 50 MT x $1,650.00/MT is erroneously printed as $72,500.00 instead of $82,500.00.",
+      "commercial_invoice": {
+        "document_id": "PKG-009_INV",
+        "file_name": "PKG-009_commercial_invoice.pdf",
+        "annotation_file": "PKG-009_commercial_invoice.json",
+        "template_id": "classic_standard"
+      },
+      "packing_list": {
+        "document_id": "PKG-009_PL",
+        "file_name": "PKG-009_packing_list.pdf",
+        "annotation_file": "PKG-009_packing_list.json",
+        "template_id": "classic_standard"
+      }
+    },
+    {
+      "package_id": "PKG-010",
+      "language": "vi",
+      "split": "test",
+      "scenario_id": "ARITHMETIC_TOTAL_SUM_VI",
+      "scenario_category": "discrepancy",
+      "description": "Sai số học tổng hóa đơn: Hai dòng hàng 25.000 USD + 25.000 USD nhưng tổng cộng in 60.000 USD.",
+      "commercial_invoice": {
+        "document_id": "PKG-010_INV",
+        "file_name": "PKG-010_commercial_invoice.pdf",
+        "annotation_file": "PKG-010_commercial_invoice.json",
+        "template_id": "modern_grid"
+      },
+      "packing_list": {
+        "document_id": "PKG-010_PL",
+        "file_name": "PKG-010_packing_list.pdf",
+        "annotation_file": "PKG-010_packing_list.json",
+        "template_id": "modern_grid"
+      }
+    },
+    {
+      "package_id": "PKG-011",
+      "language": "vi",
+      "split": "test",
+      "scenario_id": "IDENTIFIER_ORDER_MISMATCH_VI",
+      "scenario_category": "discrepancy",
+      "description": "Sai lệch mã đơn hàng: Hóa đơn tham chiếu DH-2026-LON-901 trong khi Phiếu đóng gói ghi DH-2026-LON-999.",
+      "commercial_invoice": {
+        "document_id": "PKG-011_INV",
+        "file_name": "PKG-011_commercial_invoice.pdf",
+        "annotation_file": "PKG-011_commercial_invoice.json",
+        "template_id": "classic_standard"
+      },
+      "packing_list": {
+        "document_id": "PKG-011_PL",
+        "file_name": "PKG-011_packing_list.pdf",
+        "annotation_file": "PKG-011_packing_list.json",
+        "template_id": "classic_standard"
+      }
+    },
+    {
+      "package_id": "PKG-012",
+      "language": "en",
+      "split": "test",
+      "scenario_id": "BENIGN_FORMATTING_VARIATIONS",
+      "scenario_category": "benign_variation",
+      "description": "Benign formatting variations: Dates formatted as 2026-10-22 vs 22/10/2026, buyer case differences, decimal periods vs commas. Semantically identical match.",
+      "commercial_invoice": {
+        "document_id": "PKG-012_INV",
+        "file_name": "PKG-012_commercial_invoice.pdf",
+        "annotation_file": "PKG-012_commercial_invoice.json",
+        "template_id": "modern_grid"
+      },
+      "packing_list": {
+        "document_id": "PKG-012_PL",
+        "file_name": "PKG-012_packing_list.pdf",
+        "annotation_file": "PKG-012_packing_list.json",
+        "template_id": "modern_grid"
+      }
+    }
+  ]
+}

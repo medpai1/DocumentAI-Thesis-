@@ -1,0 +1,212 @@
+{
+  "dataset_version": "1.0.0",
+  "package_id": "PKG-007",
+  "document_id": "PKG-007_PL",
+  "document_type": "packing_list",
+  "language": "en",
+  "template_id": "modern_grid",
+  "file_name": "PKG-007_packing_list.pdf",
+  "page_dimensions": {
+    "unit": "point",
+    "width": 595.2755905511812,
+    "height": 841.8897637795277,
+    "page_count": 1
+  },
+  "scenario": {
+    "scenario_id": "PARTY_BUYER_MISMATCH_EN",
+    "category": "discrepancy",
+    "description": "Buyer/Consignee mismatch: Invoice lists Atlantic Foods Ltd while Packing List lists Pacific Maritime Ltd."
+  },
+  "fields": [
+    {
+      "canonical_name": "document_number",
+      "raw_value": "PL-2026-007",
+      "normalized_value": "PL-2026-007",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        83.39,
+        507.82,
+        93.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "issue_date",
+      "raw_value": "2026-10-21",
+      "normalized_value": "2026-10-21",
+      "data_type": "date",
+      "page": 1,
+      "bbox": [
+        450,
+        98.39,
+        501.15,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "order_number",
+      "raw_value": "PO-2026-UK-007",
+      "normalized_value": "PO-2026-UK-007",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        113.39,
+        527.26,
+        123.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_name",
+      "raw_value": "SEAFOOD EXPORT ENTERPRISE NO 1",
+      "normalized_value": "SEAFOOD EXPORT ENTERPRISE NO 1",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        98.39,
+        231.14,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_address",
+      "raw_value": "D2 Street, Suoi Dau Industrial Zone, Khanh Hoa, Vietnam",
+      "normalized_value": "D2 Street, Suoi Dau Industrial Zone, Khanh Hoa, Vietnam",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        109.89,
+        345,
+        129.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_name",
+      "raw_value": "PACIFIC MARITIME TRADERS INC",
+      "normalized_value": "PACIFIC MARITIME TRADERS INC",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        158.39,
+        208.33,
+        168.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_address",
+      "raw_value": "15 Royal Crescent, London W11 4SL, United Kingdom",
+      "normalized_value": "15 Royal Crescent, London W11 4SL, United Kingdom",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        169.89,
+        345,
+        189.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_loading",
+      "raw_value": "Nha Trang Port, Khanh Hoa",
+      "normalized_value": "Nha Trang Port, Khanh Hoa",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        125,
+        205.09,
+        224.17,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_discharge",
+      "raw_value": "Southampton, United Kingdom",
+      "normalized_value": "Southampton, United Kingdom",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        205.09,
+        473.96,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "incoterm",
+      "raw_value": "FOB",
+      "normalized_value": "FOB",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        220.09,
+        381.45,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_net_weight",
+      "raw_value": "20,000.00 KG",
+      "normalized_value": 20.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        380,
+        300.24,
+        436.04,
+        309.69
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_gross_weight",
+      "raw_value": "22,000.00 KG",
+      "normalized_value": 22.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        380,
+        314.24,
+        436.04,
+        323.69
+      ],
+      "status": "present"
+    }
+  ],
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "PANGASIUS-FILLET-WELL",
+      "description": "Frozen Pangasius Fillets Well Trimmed",
+      "quantity": 2000.0,
+      "unit": "CARTONS",
+      "unit_price": null,
+      "line_total": null,
+      "gross_weight": 22000.0,
+      "net_weight": 20000.0,
+      "package_count": 2000,
+      "package_type": "MASTER CARTONS",
+      "page": 1,
+      "bbox": [
+        40,
+        260.89,
+        555,
+        274.89
+      ]
+    }
+  ]
+}

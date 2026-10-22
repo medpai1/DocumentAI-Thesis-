@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://documentai-thesis.org/schemas/ground_truth_annotation.schema.json",
+  "title": "DocumentGroundTruthAnnotation",
+  "description": "Ground-truth field and line-item extraction annotations for export documents.",
+  "type": "object",
+  "required": [
+    "dataset_version",
+    "package_id",
+    "document_id",
+    "document_type",
+    "language",
+    "template_id",
+    "file_name",
+    "page_dimensions",
+    "scenario",
+    "fields",
+    "line_items"
+  ],
+  "properties": {
+    "dataset_version": { "type": "string" },
+    "package_id": { "type": "string", "pattern": "^PKG-[0-9]{3}$" },
+    "document_id": { "type": "string" },
+    "document_type": { "type": "string", "enum": ["commercial_invoice", "packing_list"] },
+    "language": { "type": "string", "enum": ["en", "vi"] },
+    "template_id": { "type": "string" },
+    "file_name": { "type": "string" },
+    "page_dimensions": {
+      "type": "object",
+      "required": ["unit", "width", "height", "page_count"],
+      "properties": {
+        "unit": { "type": "string", "enum": ["point", "pixel", "normalized"] },
+        "width": { "type": "number", "minimum": 0 },
+        "height": { "type": "number", "minimum": 0 },
+        "page_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "scenario": {
+      "type": "object",
+      "required": ["scenario_id", "category", "description"],
+      "properties": {
+        "scenario_id": { "type": "string" },
+        "category": { "type": "string", "enum": ["clean", "discrepancy", "benign_variation"] },
+        "description": { "type": "string" }
+      }
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["canonical_name", "raw_value", "normalized_value", "data_type", "page", "bbox", "status"],
+        "properties": {
+          "canonical_name": { "type": "string" },
+          "raw_value": { "type": ["string", "null"] },
+          "normalized_value": { "type": ["string", "number", "null"] },
+          "data_type": { "type": "string", "enum": ["string", "date", "number", "currency"] },
+          "page": { "type": "integer", "minimum": 1 },
+          "bbox": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "status": { "type": "string", "enum": ["present", "missing", "unreadable", "not_applicable"] }
+        }
+      }
+    },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["line_number", "description", "quantity", "unit", "page", "bbox"],
+        "properties": {
+          "line_number": { "type": "integer", "minimum": 1 },
+          "sku": { "type": ["string", "null"] },
+          "description": { "type": "string" },
+          "quantity": { "type": "number" },
+          "unit": { "type": "string" },
+          "unit_price": { "type": ["number", "null"] },
+          "line_total": { "type": ["number", "null"] },
+          "gross_weight": { "type": ["number", "null"] },
+          "net_weight": { "type": ["number", "null"] },
+          "package_count": { "type": ["integer", "null"] },
+          "package_type": { "type": ["string", "null"] },
+          "page": { "type": "integer", "minimum": 1 },
+          "bbox": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        }
+      }
+    }
+  }
+}

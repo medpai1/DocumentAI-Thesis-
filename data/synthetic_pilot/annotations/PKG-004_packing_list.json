@@ -1,0 +1,212 @@
+{
+  "dataset_version": "1.0.0",
+  "package_id": "PKG-004",
+  "document_id": "PKG-004_PL",
+  "document_type": "packing_list",
+  "language": "vi",
+  "template_id": "classic_standard",
+  "file_name": "PKG-004_packing_list.pdf",
+  "page_dimensions": {
+    "unit": "point",
+    "width": 595.2755905511812,
+    "height": 841.8897637795277,
+    "page_count": 1
+  },
+  "scenario": {
+    "scenario_id": "QTY_MISMATCH_VI",
+    "category": "discrepancy",
+    "description": "Sai lệch số lượng: Hóa đơn ghi 1.500 Thùng nhưng Phiếu đóng gói ghi 1.450 Thùng."
+  },
+  "fields": [
+    {
+      "canonical_name": "document_number",
+      "raw_value": "PK-2026-004",
+      "normalized_value": "PK-2026-004",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        83.39,
+        508.93,
+        93.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "issue_date",
+      "raw_value": "2026-10-20",
+      "normalized_value": "2026-10-20",
+      "data_type": "date",
+      "page": 1,
+      "bbox": [
+        450,
+        98.39,
+        501.15,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "order_number",
+      "raw_value": "DH-2026-MNL-04",
+      "normalized_value": "DH-2026-MNL-04",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        113.39,
+        528.92,
+        123.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_name",
+      "raw_value": "TỔNG CÔNG TY LƯƠNG THỰC MIỀN NAM",
+      "normalized_value": "TỔNG CÔNG TY LƯƠNG THỰC MIỀN NAM",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        98.39,
+        247.89,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_address",
+      "raw_value": "42 Chu Mạnh Trinh, Bến Nghé, Quận 1, TP. Hồ Chí Minh, Việt Nam",
+      "normalized_value": "42 Chu Mạnh Trinh, Bến Nghé, Quận 1, TP. Hồ Chí Minh, Việt Nam",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        109.89,
+        345,
+        129.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_name",
+      "raw_value": "MANILA RICE TRADING CORP",
+      "normalized_value": "MANILA RICE TRADING CORP",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        158.39,
+        190.55,
+        168.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_address",
+      "raw_value": "Roxas Boulevard, Manila 1000, Philippines",
+      "normalized_value": "Roxas Boulevard, Manila 1000, Philippines",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        169.89,
+        345,
+        189.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_loading",
+      "raw_value": "Cảng Sài Gòn, TP. Hồ Chí Minh",
+      "normalized_value": "Cảng Sài Gòn, TP. Hồ Chí Minh",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        125,
+        205.09,
+        238.83,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_discharge",
+      "raw_value": "Cảng Manila, Philippines",
+      "normalized_value": "Cảng Manila, Philippines",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        205.09,
+        453.05,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "incoterm",
+      "raw_value": "CIF",
+      "normalized_value": "CIF",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        220.09,
+        377.89,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_net_weight",
+      "raw_value": "72.500,00 KG",
+      "normalized_value": 72500.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        380,
+        300.24,
+        436.04,
+        309.69
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_gross_weight",
+      "raw_value": "73.225,00 KG",
+      "normalized_value": 73225.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        380,
+        314.24,
+        436.04,
+        323.69
+      ],
+      "status": "present"
+    }
+  ],
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "RICE-JASMINE-50KG",
+      "description": "Gạo thơm Jasmine đóng bao 50kg xuất khẩu",
+      "quantity": 1450.0,
+      "unit": "BAO",
+      "unit_price": null,
+      "line_total": null,
+      "gross_weight": 75750.0,
+      "net_weight": 75000.0,
+      "package_count": 1500,
+      "package_type": "BAO PP",
+      "page": 1,
+      "bbox": [
+        40,
+        260.89,
+        555,
+        274.89
+      ]
+    }
+  ]
+}

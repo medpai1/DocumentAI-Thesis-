@@ -1,0 +1,212 @@
+{
+  "dataset_version": "1.0.0",
+  "package_id": "PKG-003",
+  "document_id": "PKG-003_PL",
+  "document_type": "packing_list",
+  "language": "en",
+  "template_id": "modern_grid",
+  "file_name": "PKG-003_packing_list.pdf",
+  "page_dimensions": {
+    "unit": "point",
+    "width": 595.2755905511812,
+    "height": 841.8897637795277,
+    "page_count": 1
+  },
+  "scenario": {
+    "scenario_id": "QTY_MISMATCH_EN",
+    "category": "discrepancy",
+    "description": "Quantity mismatch: Invoice specifies 500 Bags while Packing List specifies 480 Bags."
+  },
+  "fields": [
+    {
+      "canonical_name": "document_number",
+      "raw_value": "PL-2026-003",
+      "normalized_value": "PL-2026-003",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        83.39,
+        507.82,
+        93.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "issue_date",
+      "raw_value": "2026-10-19",
+      "normalized_value": "2026-10-19",
+      "data_type": "date",
+      "page": 1,
+      "bbox": [
+        450,
+        98.39,
+        501.15,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "order_number",
+      "raw_value": "PO-2026-DE-003",
+      "normalized_value": "PO-2026-DE-003",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        113.39,
+        527.26,
+        123.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_name",
+      "raw_value": "CENTRAL HIGHLANDS COFFEE EXPORT CORP",
+      "normalized_value": "CENTRAL HIGHLANDS COFFEE EXPORT CORP",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        98.39,
+        273.9,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_address",
+      "raw_value": "KM 8, Highway 14, Buon Ma Thuot, Dak Lak, Vietnam",
+      "normalized_value": "KM 8, Highway 14, Buon Ma Thuot, Dak Lak, Vietnam",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        109.89,
+        345,
+        129.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_name",
+      "raw_value": "HAMBURG BEAN ROASTERS GMBH",
+      "normalized_value": "HAMBURG BEAN ROASTERS GMBH",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        158.39,
+        220.0,
+        168.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_address",
+      "raw_value": "Am Sandtorkai 48, 20457 Hamburg, Germany",
+      "normalized_value": "Am Sandtorkai 48, 20457 Hamburg, Germany",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        169.89,
+        345,
+        189.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_loading",
+      "raw_value": "Cat Lai, Ho Chi Minh",
+      "normalized_value": "Cat Lai, Ho Chi Minh",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        125,
+        205.09,
+        198.81,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_discharge",
+      "raw_value": "Hamburg, Germany",
+      "normalized_value": "Hamburg, Germany",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        205.09,
+        435.25,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "incoterm",
+      "raw_value": "FOB",
+      "normalized_value": "FOB",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        220.09,
+        381.45,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_net_weight",
+      "raw_value": "28,800.00 KG",
+      "normalized_value": 28.8,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        380,
+        300.24,
+        436.04,
+        309.69
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_gross_weight",
+      "raw_value": "29,040.00 KG",
+      "normalized_value": 29.04,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        380,
+        314.24,
+        436.04,
+        323.69
+      ],
+      "status": "present"
+    }
+  ],
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "COFFEE-ROBUSTA-G1",
+      "description": "Vietnamese Robusta Green Coffee Grade 1",
+      "quantity": 480.0,
+      "unit": "BAGS",
+      "unit_price": null,
+      "line_total": null,
+      "gross_weight": 30250.0,
+      "net_weight": 30000.0,
+      "package_count": 500,
+      "package_type": "JUTE BAGS",
+      "page": 1,
+      "bbox": [
+        40,
+        260.89,
+        555,
+        274.89
+      ]
+    }
+  ]
+}

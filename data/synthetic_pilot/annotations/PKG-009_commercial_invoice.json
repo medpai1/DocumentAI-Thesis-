@@ -1,0 +1,212 @@
+{
+  "dataset_version": "1.0.0",
+  "package_id": "PKG-009",
+  "document_id": "PKG-009_INV",
+  "document_type": "commercial_invoice",
+  "language": "en",
+  "template_id": "classic_standard",
+  "file_name": "PKG-009_commercial_invoice.pdf",
+  "page_dimensions": {
+    "unit": "point",
+    "width": 595.2755905511812,
+    "height": 841.8897637795277,
+    "page_count": 1
+  },
+  "scenario": {
+    "scenario_id": "ARITHMETIC_LINE_TOTAL_EN",
+    "category": "discrepancy",
+    "description": "Arithmetic error: Line item 50 MT x $1,650.00/MT is erroneously printed as $72,500.00 instead of $82,500.00."
+  },
+  "fields": [
+    {
+      "canonical_name": "document_number",
+      "raw_value": "INV-2026-009",
+      "normalized_value": "INV-2026-009",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        83.39,
+        512.26,
+        93.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "issue_date",
+      "raw_value": "2026-10-22",
+      "normalized_value": "2026-10-22",
+      "data_type": "date",
+      "page": 1,
+      "bbox": [
+        450,
+        98.39,
+        501.15,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "order_number",
+      "raw_value": "PO-2026-IN-009",
+      "normalized_value": "PO-2026-IN-009",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        450,
+        113.39,
+        523.37,
+        123.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_name",
+      "raw_value": "VIETNAM RUBBER GROUP CORP",
+      "normalized_value": "VIETNAM RUBBER GROUP CORP",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        98.39,
+        206.67,
+        108.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "seller_address",
+      "raw_value": "236 Hai Ba Trung, District 1, Ho Chi Minh City, Vietnam",
+      "normalized_value": "236 Hai Ba Trung, District 1, Ho Chi Minh City, Vietnam",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        109.89,
+        345,
+        129.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_name",
+      "raw_value": "MUMBAI TIRE MANUFACTURING LTD",
+      "normalized_value": "MUMBAI TIRE MANUFACTURING LTD",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        158.39,
+        225.53,
+        168.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "buyer_address",
+      "raw_value": "Andheri Kurla Road, Andheri East, Mumbai 400059, India",
+      "normalized_value": "Andheri Kurla Road, Andheri East, Mumbai 400059, India",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        45,
+        169.89,
+        345,
+        189.89
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_loading",
+      "raw_value": "Cat Lai, Ho Chi Minh",
+      "normalized_value": "Cat Lai, Ho Chi Minh",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        125,
+        205.09,
+        198.81,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "port_of_discharge",
+      "raw_value": "Nhava Sheva, India",
+      "normalized_value": "Nhava Sheva, India",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        205.09,
+        434.82,
+        213.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "incoterm",
+      "raw_value": "FOB",
+      "normalized_value": "FOB",
+      "data_type": "string",
+      "page": 1,
+      "bbox": [
+        365,
+        220.09,
+        381.45,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "currency",
+      "raw_value": "USD",
+      "normalized_value": "USD",
+      "data_type": "currency",
+      "page": 1,
+      "bbox": [
+        510,
+        220.09,
+        526.89,
+        228.49
+      ],
+      "status": "present"
+    },
+    {
+      "canonical_name": "total_amount",
+      "raw_value": "USD 72,500.00",
+      "normalized_value": 72500.0,
+      "data_type": "number",
+      "page": 1,
+      "bbox": [
+        480,
+        300.24,
+        541.54,
+        309.69
+      ],
+      "status": "present"
+    }
+  ],
+  "line_items": [
+    {
+      "line_number": 1,
+      "sku": "RUBBER-SVR-3L",
+      "description": "Natural Rubber Technical Specified SVR 3L",
+      "quantity": 50.0,
+      "unit": "MT",
+      "unit_price": 1650.0,
+      "line_total": 72500.0,
+      "gross_weight": null,
+      "net_weight": null,
+      "package_count": 1500,
+      "package_type": "BALES",
+      "page": 1,
+      "bbox": [
+        40,
+        260.89,
+        555,
+        274.89
+      ]
+    }
+  ]
+}
